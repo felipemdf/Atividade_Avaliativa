@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\ItemController;
 
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/usuarios', [UsuarioController::class, 'index']);
+Route::get('/items', [ItemController::class, 'index']);
